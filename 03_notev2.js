@@ -14,3 +14,15 @@
  */
 
 const notesDesEleves = [10, 20, 4, 10, 3, 1, 0, 11, 8, 18, 15, 20, 20];
+
+const n = notesDesEleves.length;
+
+const newNotesDesEleves = notesDesEleves.map(
+  x => x < 20 ? x + 0.5 : x
+);
+console.log(newNotesDesEleves)
+
+const result = newNotesDesEleves.reduce(
+    (acc, x) => acc + (x) /n, 0
+  );
+  console.log(result /2);
