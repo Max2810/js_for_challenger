@@ -9,3 +9,13 @@
  */
 
 const notesDesEleves = [10, 20, 5, 10, 3, 1, 0, 11, 8, 18, 15];
+
+const n = notesDesEleves.length;
+
+console.log(
+  Math.floor(
+    notesDesEleves.reduce(
+      (acc, x) => acc + (x) /n, 0
+    )
+  )
+)
