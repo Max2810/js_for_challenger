@@ -17,4 +17,14 @@ let myStr = `         Hello wOrld! \n fOObar!   \n pomme orange    `;
  */
 
  // Etape 0 -> Compléter/continuer le code
- myStr = myStr.replace("?", "?");
+ let replaceStr = myStr.replace("pomme orange", "pomme verte");
+ let newStr = replaceStr.split('\n');
+ let firstStr = newStr[0].slice(9, 21);
+ let sectStr = newStr[1].replace(/ /g, "");
+ let thirdStr = newStr[2].replace(" ", "");
+ 
+ const finalStr = (`${firstStr.toLowerCase()}, ${sectStr.toLowerCase()}, ${thirdStr.toLowerCase()}`);
+ 
+ console.log(finalStr);
+ console.log(finalStr.length);
+ 
