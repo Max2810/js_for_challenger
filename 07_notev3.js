@@ -34,3 +34,19 @@ const eleves = [
 
 // Afficher les Elèves dans le terminal
 console.log(eleves);
+
+const elevesScolariser = eleves.filter(e => e.scolariser);
+const note = elevesScolariser.map(e => e.noteMoyenne);
+
+const n = elevesScolariser.length
+
+console.log(elevesScolariser);
+console.log(note.reduce(
+    (acc, x) => acc + (x) /n, 0
+));
+
+let classement = elevesScolariser.sort((a, b) => a.noteMoyenne - b.noteMoyenne);
+console.log(classement)
+
+const elevesNonScolariser = eleves.filter(e => e.scolariser === false);
+console.log(elevesNonScolariser)
