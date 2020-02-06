@@ -19,3 +19,11 @@
 
 // Afficher les arguments de script
 console.log(process.argv);
+
+
+let result = {
+  arg1 : process.argv[3],
+  arg2 : process.argv[5],
+  arg3 : true
+}
+console.log(result)
